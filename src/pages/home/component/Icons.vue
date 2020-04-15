@@ -78,8 +78,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
- @import ('D:\WEBWork\vue网盘学习\项目开发\travel\src\assets\styles\varibles.styl')
- @import('D:\WEBWork\vue网盘学习\项目开发\travel\src\assets\styles\mixins.styl')
+@import ('D:\WEBWork\vue网盘学习\项目开发\travel\src\assets\styles\varibles.styl')
+@import('D:\WEBWork\vue网盘学习\项目开发\travel\src\assets\styles\mixins.styl')
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
@@ -111,6 +111,6 @@ export default {
         height: .44rem
         line-height: .44rem
         text-align: center
-        color: $darkTextColor
+        color: darkTextColor
         ellipsis()
 </style>

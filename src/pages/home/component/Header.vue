@@ -5,19 +5,22 @@
       </div>
       <div class="header-input">内容</div>
       <div class="header-right">
-          <span>城市</span><span class="iconfont arrow-icon">&#xe6a4;</span>
+          <span>{{this.city}}</span><span class="iconfont arrow-icon">&#xe6a4;</span>
       </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
-  $import '~styles/varibles.styl'
+@import '~styles/varibles.styl'
   .header
     display: flex
     height: .86rem
