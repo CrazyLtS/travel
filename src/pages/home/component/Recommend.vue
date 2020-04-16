@@ -2,7 +2,7 @@
 <div>
   <div class="title">热销推荐</div>
   <ul>
-      <li class="item" v-for="item of list" :key="item.id">
+      <li class="item border-one" v-for="item of list" :key="item.id">
           <div>
               <img class="item-img" :src="item.imgUrl">
           </div>
@@ -11,7 +11,6 @@
               <p class="item-desc">{{item.desc}}</p>
               <button class="item-button">查看详情</button>
           </div>
-          <div class="border-one"></div>
       </li>
   </ul>
 </div>
@@ -29,6 +28,9 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   @import '~styles/variables.styl'
+  .border-one
+    &::after
+      background-color: #ff9300
   .title
     margin-top: .2rem
     line-height: .8rem

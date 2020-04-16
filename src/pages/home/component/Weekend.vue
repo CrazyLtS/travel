@@ -2,7 +2,7 @@
 <div>
   <div class="title">周末去哪</div>
   <ul>
-      <li class="item" v-for="item of list" :key="item.id">
+      <li class="item border-one" v-for="item of list" :key="item.id">
           <div class="item-img-wrapper">
               <img class="item-img" :src="item.imgUrl">
           </div>
@@ -10,8 +10,6 @@
               <p class="item-title">{{item.title}}</p>
               <p class="item-desc">{{item.desc}}</p>
           </div>
-          <!-- 一物理像素 -->
-          <div class="border-one"></div>
       </li>
   </ul>
 </div>
@@ -29,6 +27,9 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   @import '~styles/variables.styl'
+  .border-one
+    &::after
+      background-color: #ccc
 .title
   line-height: .8rem
   background-color: #eee
