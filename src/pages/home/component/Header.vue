@@ -1,12 +1,12 @@
 <template>
     <div class="header">
       <div class="header-left">
-          <span class="iconfont back-icon">&#xe6ac;</span>
+          <div class="iconfont back-icon">&#xe600;</div>
       </div>
       <div class="header-input">内容</div>
       <router-link to="/city">
       <div class="header-right">
-          <span>{{this.city}}</span><span class="iconfont arrow-icon">&#xe6a4;</span>
+          <span>{{this.$store.state.city}}</span><span class="iconfont arrow-icon">&#xe602;</span>
       </div>
       </router-link>
     </div>
@@ -51,5 +51,5 @@ export default {
       text-align: center
       color: #fff
       .arrow-icon
-        font-size .4rem
+        font-size .2rem
 </style>
