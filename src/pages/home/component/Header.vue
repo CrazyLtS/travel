@@ -4,9 +4,11 @@
           <span class="iconfont back-icon">&#xe6ac;</span>
       </div>
       <div class="header-input">内容</div>
+      <router-link to="/city">
       <div class="header-right">
           <span>{{this.city}}</span><span class="iconfont arrow-icon">&#xe6a4;</span>
       </div>
+      </router-link>
     </div>
 </template>
 
@@ -47,6 +49,7 @@ export default {
       width: 1.24rem
       float: right
       text-align: center
+      color: #fff
       .arrow-icon
         font-size .4rem
 </style>

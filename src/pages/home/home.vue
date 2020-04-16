@@ -16,7 +16,7 @@ import HomeRecommend from './component/Recommend'
 import HomeWeekend from './component/Weekend'
 import axios from 'axios'
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     HomeHeader,
     HomeSwiper,
