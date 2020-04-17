@@ -6,17 +6,23 @@
       <div class="header-input">内容</div>
       <router-link to="/city">
       <div class="header-right">
-          <span>{{this.$store.state.city}}</span><span class="iconfont arrow-icon">&#xe602;</span>
+          <span>{{this.currentCity}}</span><span class="iconfont arrow-icon">&#xe602;</span>
       </div>
       </router-link>
     </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: 'HomeHeader',
   props: {
     city: String
+  },
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
   }
 }
 </script>
