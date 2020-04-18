@@ -53,6 +53,7 @@ export default {
   },
   methods: {
     handleCityClick (city) {
+      alert('zhix')
       this.changeCity(city)
       // 返回首页
       this.$router.push('/')
