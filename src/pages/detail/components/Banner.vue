@@ -1,13 +1,11 @@
 <template>
 <div>
     <div class="banner" @click="handleBannerClick">
-        <img src="https://img1.qunarzz.com/vs_ceph_vs_tts/dbab2e66-bf6b-4b77-ab09-85adc727ff45.png_r_640x420x95_a3866759.png" class="banner-img">
+        <img :src="bannerImg" class="banner-img">
         <div class="banner-info">
-            <div class="banner-title">
-                自由行 云南丽江+大理4日自由行|省心包车游|专属用车|2晚特色客栈+升级1晚海房
-            </div>
+            <div class="banner-title">{{this.sightName}}</div>
             <div class="banner-number">
-                <span class="banner-icon iconfont">&#xe6ff;</span>28
+                <span class="banner-icon iconfont">&#xe6ff;</span>{{this.bannerImgs.length}}
             </div>
         </div>
     </div>
@@ -23,6 +21,11 @@
 import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailBanner',
+  props: {
+    bannerImg: String,
+    sightName: String,
+    bannerImgs: Array
+  },
   data () {
     return {
       showGallary: false,
